@@ -1,3 +1,14 @@
+const textarea = document.getElementById("blocked-sites");
+
+textarea.placeholder = [
+  "reddit.com",
+  "youtube.com",
+  "facebook.com",
+  "instagram.com",
+  "twitter.com/home",
+  "^https?://([\w\d]+\.)?google\.com"
+].join("\n");
+
 function restoreOptions() {
   chrome.storage.sync.get({
     blockedSites: '',
