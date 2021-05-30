@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Focus Dude!</title>
+    <style>
+      body {
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 100%;
+        min-width: 600px;
+      }
+      h1 {
+        margin: 0;
+      }
+      textarea {
+        height: 300px;
+        width: 99%;
+      }
+      table td.regex {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Focus Dude!</h1>
+    <p>List the websites you want to block below (one per line). For example:</p>
+    <table>
+      <tr>
+        <td class="regex">google.com</td>
+        <td>Block anything that contains google.com anywhere in the URL</td>
+      </tr>
+      <tr>
+        <td class="regex">^https?://([\w\d]+\.)?google\.com</td>
+        <td>Block any URL from google.com, including subdomains.</td>
+      </tr>
+    </table>
+    <textarea id="blocked-sites"></textarea>
+    <div id="status"></div>
+    <button id="save-options">Update</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
