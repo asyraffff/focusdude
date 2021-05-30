@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>FOCUS DUDE</title>
+	<style type="text/css">
+		body {
+			font-family: sans-serif;
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+
+		#quote {
+			font-size: 90px;
+			font-weight: 800;
+			text-align: center;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+	</style>
+</head>
+
+<body>
+	<div id="quote"></div>
+
+	<script type="text/javascript">
+		var quotes = [
+            "GO FUCKING WORK.",
+            "TICK TOCK. FUCKING WORK.",
+            "REMEMBER WORK? FUCKING DO IT.",
+            "FUCKING WORK. NOW.",
+            "WHAT THE FUCK? GO WORK.",
+            "WORK YOU FUCKITY FUCK.",
+            "GO LOOK AT THE FUCKING SKY IF YOU NEED A BREAK.",
+            "STOP WASTING TIME AND WORK."
+        ];
+        function getQuote () {
+            return quotes[Math.floor(Math.random() * (quotes.length-1))];
+        }
+        function setQuote() {
+            document.querySelector("#quote").textContent = getQuote();
+        }
+
+        window.onload = setQuote;
+	</script>
+</body>
+
+</html>
