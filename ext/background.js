@@ -1,4 +1,4 @@
-var goFuckingWorkURL = "https://asyraffff.github.io/no-thank/";
+var goFuckingWorkURL = "https://asyraffff.github.io/focusdude/";
 
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
   if (! tab.url) {
