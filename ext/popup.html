@@ -14,7 +14,7 @@
         font-family: 'Balsamiq Sans', cursive;
         /* font-family: 'Sniglet', cursive; */
         font-size: 100%;
-        min-width: 600px;
+        min-width: 500px;
       }
       h1 {
         margin: 0;
@@ -37,12 +37,14 @@
         <col span="2">
       </colgroup>
       <tr>
-        <td class="regex">google.com</td>
-        <td>Block anything that contains google.com anywhere in the URL</td>
+        <td class="regex"><b>google.com</b></td>
+        <td>Block anything that contains <span class="inline block">google.com</span> anywhere in the URL.</td>
       </tr>
       <tr>
-        <td class="regex">^https?://([\w\d]+\.)?google\.com</td>
-        <td>Block any URL from google.com, including subdomains. (https://ihateregex.io/expr/url/)</td>
+        <td class="regex"><b>^https?://([\w\d]+\.)?google\.com</b></td>
+        <td>Block any URL from google.com, including <span class="inline block">subdomain</span>
+          . (https://ihateregex.io/expr/url/)</td>
+
       </tr>
     </table>
     <textarea class="block" id="blocked-sites"></textarea>
