@@ -29,16 +29,20 @@
     </style>
   </head>
   <body>
-    <h1>Focus Dude!</h1>
+    <h1>Focus Dude! </h1>
     <p>List the websites you want to block below (one per line). For example:</p>
     <table>
+      <colgroup>
+        <col style="background-color: #FF6347">
+        <col span="2">
+      </colgroup>
       <tr>
         <td class="regex">google.com</td>
         <td>Block anything that contains google.com anywhere in the URL</td>
       </tr>
       <tr>
         <td class="regex">^https?://([\w\d]+\.)?google\.com</td>
-        <td>Block any URL from google.com, including subdomains.</td>
+        <td>Block any URL from google.com, including subdomains. (https://ihateregex.io/expr/url/)</td>
       </tr>
     </table>
     <textarea class="block" id="blocked-sites"></textarea>

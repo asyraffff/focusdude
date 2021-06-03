@@ -6,7 +6,7 @@ textarea.placeholder = [
   "facebook.com",
   "instagram.com",
   "twitter.com/home",
-  "^https?://([\w\d]+\.)?google\.com"
+  "^https?://([\\w\\d]+\\.)?google\\.com"
 ].join("\n");
 
 function restoreOptions() {
