@@ -26,6 +26,12 @@
       table td.regex {
         width: 50%;
       }
+      #controls {
+        transition: opacity 1s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
     </style>
   </head>
   <body>
@@ -49,8 +55,11 @@
     </table>
     <textarea class="block" id="blocked-sites"></textarea>
     <div id="status"></div>
-    <button class="block" id="save-options">Update</button>
-
+    <div id="controls">
+      <button class="block" id="save-options">Update</button>
+      <div>
+        <strong>Enabled?</strong><input id="checkbox" type="checkbox" >
+      </div>
     <script src="popup.js"></script>
   </body>
 </html>
