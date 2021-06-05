@@ -24,6 +24,7 @@ function saveOptions() {
     chrome.storage.sync.set({
       blockedSites: blockedSites
     }, function() {
+      var status = document.getElementById('status');
       // chrome.browserAction.setBadgeText({
       //   text: 'OFF'
       // });
@@ -33,6 +34,7 @@ function saveOptions() {
                     19: "icons/not_active_icon.png"
                 }
             });
+            setTimeout(function() {
     });
 
   } else {
