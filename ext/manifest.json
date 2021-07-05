@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Focus Dude !!!",
-  "description": "Focus Dude !!!, is an Chrome productivity extension to block website access",
+  "description": "Focus Dude !!!, is a Chrome productivity extension to block website access",
   "version": "1.0",
   "icons": { "128": "icons/active_128.png" },
   "browser_action": {
