@@ -7,6 +7,7 @@ textarea.placeholder = [
   "facebook.com",
   "instagram.com",
   "twitter.com/home",
+  "https://news.ycombinator.com/",
   "^https?://([\\w\\d]+\\.)?google\\.com"
 ].join("\n");
 
