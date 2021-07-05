@@ -3,6 +3,7 @@ const textarea = document.getElementById("blocked-sites");
 textarea.placeholder = [
   "reddit.com",
   "youtube.com",
+  "linkedin.com",
   "facebook.com",
   "instagram.com",
   "twitter.com/home",
@@ -24,7 +25,6 @@ function saveOptions() {
     chrome.storage.sync.set({
       blockedSites: blockedSites
     }, function() {
-      var status = document.getElementById('status');
       // chrome.browserAction.setBadgeText({
       //   text: 'OFF'
       // });
@@ -34,7 +34,6 @@ function saveOptions() {
                     19: "icons/not_active_icon.png"
                 }
             });
-            setTimeout(function() {
     });
 
   } else {
