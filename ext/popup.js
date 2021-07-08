@@ -1,4 +1,5 @@
 const textarea = document.getElementById("blocked-sites");
+var onOffPage = document.getElementById("onOffPage");
 
 textarea.placeholder = [
   "reddit.com",
@@ -10,6 +11,11 @@ textarea.placeholder = [
   "https://news.ycombinator.com/",
   "^https?://([\\w\\d]+\\.)?google\\.com"
 ].join("\n");
+
+/* Open the options tab */
+  function onOffPageClick(){
+    chrome.tabs.create({"url": "onOffPage.html"});
+  }
 
 function restoreOptions() {
   chrome.storage.sync.get({
@@ -63,3 +69,4 @@ function saveOptions() {
 
 document.addEventListener('DOMContentLoaded', restoreOptions);
 document.getElementById('save-options').addEventListener('click', saveOptions);
+onOffPage.addEventListener("click", onOffPageClick);

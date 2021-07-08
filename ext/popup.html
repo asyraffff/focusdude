@@ -20,7 +20,7 @@
         margin: 0;
       }
       textarea {
-        height: 285px;
+        height: 265px;
         width: 99%;
       }
       table td.regex {
@@ -53,16 +53,15 @@
         <td class="regex"><b>^https?://([\w\d]+\.)?google\.com</b></td>
         <td>Block any URL from google.com, including <span class="inline block">subdomain</span>
           . (https://ihateregex.io/expr/url/)</td>
-
       </tr>
     </table>
     <textarea class="block" id="blocked-sites"></textarea>
+    <a id="onOffPage" href>
+      Where is ON/OFF button?
+    </a>
     <div id="status"></div>
     <div id="controls">
       <button class="block" id="save-options">Update</button>
-      <!-- <div>
-        <strong>Enabled?</strong><input id="checkbox" type="checkbox" >
-      </div> -->
       <p>By <a href="https://twitter.com/asyr0f" target="_blank" rel="noopener noreferrer">@asyraf</a></p>
     </div>
     <script src="popup.js"></script>
