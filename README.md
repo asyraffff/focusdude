@@ -1,7 +1,7 @@
 
 # [Focus Dude !!!](https://asyrafff.com/focus-dude/) 🧘‍♀️
 
-A simple chrome extension that helps you **stay focused when you work with your computer on the web.**
+A simple [chrome extension](https://chrome.google.com/webstore/detail/focus-dude/nkifhlkldbghhbcjdgbafeknipcmhncc?hl=en&authuser=0) that helps you **stay focused when you work with your computer on the web.**
 
 It is easy to **lose focus** when working on the web because there are **so many distractions** that are available!
 
@@ -25,7 +25,10 @@ I have a problem consuming too much HackerNews 😅 ([read my full story](https:
 ## The Workflow
 
 ![appGIF](https://cdn.hashnode.com/res/hashnode/image/upload/v1625452509448/iO_nZ-yFs.gif)
-## Run Locally
+
+[Link for Chrome Extension](https://chrome.google.com/webstore/detail/focus-dude/nkifhlkldbghhbcjdgbafeknipcmhncc?hl=en&authuser=0)
+
+## Download
 
 1. [Clone](https://github.com/asyraffff/focusdude.git) or [download](https://github.com/asyraffff/focusdude/archive/refs/heads/master.zip) an archive of this repository
 2. Navigate in your browser to `chrome://extensions`
